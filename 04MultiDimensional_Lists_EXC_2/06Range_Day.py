@@ -15,8 +15,8 @@ def shoot(direction):
     c = my_pos[1] + directions[direction][1]
 
     while 0 <= r < SIZE and 0 <= c < SIZE:
-        if field[r][c] == "x":
-            field[r][c] == '.'
+        if field[r][c] == 'x':
+            field[r][c] = '.'
             return [r, c]
         r += directions[direction][0]
         c += directions[direction][1]
@@ -62,6 +62,7 @@ for _ in range(int(input())):
         if targets_hit == targets:
             print(f"Training completed! All {targets} targets hit.")
             break
+
 else:
     print(f"Training not completed! {targets - targets_hit} targets left. ")
 
