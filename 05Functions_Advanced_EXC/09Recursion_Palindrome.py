@@ -8,4 +8,5 @@ def palindrome(word, idx):
 
     return palindrome(word, idx + 1)
 
+
 print(palindrome("abcba", 0))
