@@ -1,9 +1,9 @@
 from string import punctuation
 
-with open('01text.txt', 'r') as file:
+with open('files/01text.txt', 'r') as file:
     text = file.readlines()
 
-with open('01output.txt', 'w') as output_file:
+with open('files/01output.txt', 'w') as output_file:
     for i in range(len(text)):
         letters, marks = 0, 0
 

@@ -1,6 +1,6 @@
 symbols = ["-", ",", ".", "!", "?"]
 
-with open('01text.txt', 'r') as file:
+with open('files/01text.txt', 'r') as file:
     text = file.readlines()
 
 for row in range(0, len(text), 2):
