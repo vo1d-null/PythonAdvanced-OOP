@@ -7,4 +7,11 @@
     <orderEntry type="jdk" jdkName="Python 3.11 (PythonAdvanced-OOP)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/PythonOOP/02_Classes_and_Objects_LAB" />
+      </list>
+    </option>
+  </component>
 </module>
