@@ -15,11 +15,11 @@ class Circle:
     def area(self):
         return self.radius ** 2 * self.pi
     # Method to get the area of the circle.
-    def get_area(self):
+    def get_area(self) -> float:
         return self.area()
     # Method to calculate the circumference of the circle.
-    def circumference(self):
+    def circumference(self) -> float:
         return 2 * self.pi * self.radius
     # Method to get the circumference of the circle.
-    def get_circumference(self):
+    def get_circumference(self) -> float:
         return self.circumference()
