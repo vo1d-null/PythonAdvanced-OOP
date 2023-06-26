@@ -35,6 +35,8 @@ class Vet:
         # Calculate the space left in the clinic
         space_left = abs(len(Vet.animals) - Vet.space)
         return f"{self.name} has {len(self.animals)} animals. {space_left} space left in clinic"
+
+
 # Create two vets
 peter = Vet("Peter")
 george = Vet("George")
