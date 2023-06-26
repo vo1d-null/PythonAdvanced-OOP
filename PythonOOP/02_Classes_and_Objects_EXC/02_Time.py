@@ -39,6 +39,7 @@ class Time:
         # Return the time in string format
         return Time.get_time(self)
 
+
 # Test example
 # Create a Time object with initial time 9:30:59
 time = Time(9, 30, 59)
