@@ -1,4 +1,5 @@
 from project.car import Car
-class Sports_Car(Car):
+class SportsCar(Car):
     def race(self):
+        # Perform racing action
         return "racing..."
