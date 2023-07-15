@@ -32,7 +32,7 @@ class Smartphone:
 
 # Create a new smartphone with 100 memory
 smartphone = Smartphone(100)
-# Try to install Facebook before turning on the smartphone
+# Try to install Facebook unmodified turning on the smartphone
 print(smartphone.install("Facebook", 60))
 # Turn on the smartphone and install Facebook, Messenger, and Instagram
 smartphone.power()
