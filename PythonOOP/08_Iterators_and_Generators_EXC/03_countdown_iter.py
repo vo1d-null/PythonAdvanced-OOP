@@ -1,4 +1,4 @@
-class countdown_iterator:
+class CountdownIterator:
     def __init__(self, count):
         self.count = count
         self.end = 0
@@ -8,14 +8,19 @@ class countdown_iterator:
         return self
 
     def __next__(self):
-        if self.last >= self.end:
-            current_value = self.last
-            self.last -= 1
-            return current_value
-        else:
+        # Check if the last value has reached the end value
+        if self.last < self.end:
             raise StopIteration()
+        # Store the current value
+        current_value = self.last
+        # Decrement the last value
+        self.last -= 1
+        # Return the current value
+        return current_value
 
 
-iterator = countdown_iterator(10)
+# Create an instance of the CountdownIterator class with count = 10
+iterator = CountdownIterator(10)
+# Iterate over the iterator and print each item
 for item in iterator:
     print(item, end=" ")

@@ -1,23 +1,33 @@
-class dictionary_iter:
+class DictionaryIter:
     def __init__(self, dictionary: dict):
-        self.dictionary: dict = dictionary
-        self.i = 0
-        self.dict_len = len(self.dictionary) - 1
-        self.dict_to_list = list((k, v) for k, v in self.dictionary.items())
+        # Initialize the DictionaryIter object with the given dictionary
+        self.dictionary = dictionary
+        # Initialize the index to 0
+        self.index = 0
+        # Calculate the length of the dictionary and subtract 1
+        self.length = len(self.dictionary) - 1
+        # Convert the dictionary items into a list
+        self.items = list(self.dictionary.items())
 
     def __iter__(self):
+        # Return the DictionaryIter object itself as an iterator
         return self
 
     def __next__(self):
-        if self.i <= self.dict_len:
-            i = self.i
-            self.i += 1
-            return self.dict_to_list[i]
-        else:
+        # Check if the index is greater than the length
+        if self.index > self.length:
+            # Raise StopIteration to signal the end of iteration
             raise StopIteration()
+        # Get the current index
+        current_index = self.index
+        # Increment the index by 1
+        self.index += 1
+        # Return the item at the current index
+        return self.items[current_index]
 
 
-result = dictionary_iter({1: "1", 2: "2"})
-
-for x in result:
-    print(x)
+# Create a DictionaryIter object with the given dictionary
+result = DictionaryIter({1: "1", 2: "2"})
+# Iterate over the DictionaryIter object and print each item
+for item in result:
+    print(item)
