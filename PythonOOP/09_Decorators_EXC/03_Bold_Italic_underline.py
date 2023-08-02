@@ -1,3 +1,4 @@
+# This function adds bold tags to the output of the decorated function
 def make_bold(bold):
     def wrapper(*string):
         start = '<b>'
@@ -7,6 +8,7 @@ def make_bold(bold):
     return wrapper
 
 
+# This function adds italic tags to the output of the decorated function
 def make_italic(italic):
     def wrapper(*string):
         start = '<i>'
@@ -16,6 +18,7 @@ def make_italic(italic):
     return wrapper
 
 
+# This function adds underline tags to the output of the decorated function
 def make_underline(underline):
     def wrapper(*string):
         start = '<u>'
@@ -23,7 +26,6 @@ def make_underline(underline):
         return f"{start}{underline(*string)}{end}"
 
     return wrapper
-
 
 # @make_bold
 # @make_italic

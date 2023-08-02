@@ -4,7 +4,6 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PythonOOP/05_Encapsulation_EXC/02_Pizza_Maker/project" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/PythonOOP/09_Decorators_EXC" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PythonOOP/09_Decorators_EXC/09_Computer_Store/project" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PythonOOP/09_Decorators_EXC/09_Computer_Store/project/computer_types" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
