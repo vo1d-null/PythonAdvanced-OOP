@@ -59,7 +59,7 @@ truck.refuel(50)
 print(truck.fuel_quantity)
 print("*" * 20)
 
-# test car
+# tests car
 import unittest
 
 
